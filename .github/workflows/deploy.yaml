@@ -9,7 +9,7 @@ jobs:
     runs-on: self-hosted
 
     steps:
-    
+    - continue-on-error: true
     - uses: actions/checkout@v3
     - name: Build app
       uses: actions/setup-node@v3
@@ -17,9 +17,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm i
     - run: npm run build
-    - name: Stop old instance
     - run: pm2 stop website
-    - continue-on-error: true
-    - name: Deploy new instance
     - run: pm2 start "npm run start" --name="website"
     - run: pm2 save
