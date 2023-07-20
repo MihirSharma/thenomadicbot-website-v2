@@ -2,7 +2,7 @@ name: site-deploy CI
 
 on:
   push:
-    branches: [main]
+    branches: [master]
 
 jobs:
   deploy:
@@ -14,9 +14,8 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-    - run: 
-        npm i
-        npm run build
-        pm2 stop website
-        pm2 start "npm run start" --name="website"
-        pm2 save
+    - run: npm i
+    - run: npm run build
+    - run: pm2 stop website
+    - run: pm2 start "npm run start" --name="website"
+    - run: pm2 save
