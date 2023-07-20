@@ -19,7 +19,7 @@ const Navbar = () => {
 					className="px-8 py-5 text-slate-900 bg-teal-500 hover:bg-teal-100 hover:text-lg hover:font-semibold transition-all duration-250 ease-out hover:ease-in">
 					<div>About</div>
 				</Link>
-				<Link
+				{/* <Link
 					href="/projects"
 					className="px-8 py-5 text-slate-900 bg-teal-400 hover:bg-teal-100 hover:text-lg hover:font-semibold transition-all duration-250 ease-out hover:ease-in">
 					<div>Projects</div>
@@ -28,10 +28,10 @@ const Navbar = () => {
 					href="/blog"
 					className="px-8 py-5 text-slate-900 bg-teal-300 hover:bg-teal-100 hover:text-lg hover:font-semibold transition-all duration-250 ease-out hover:ease-in">
 					<div>Blog</div>
-				</Link>
+				</Link> */}
 				<Link
 					href="/contact"
-					className="px-8 py-5 text-slate-900 bg-teal-200 hover:bg-teal-100 hover:text-lg hover:font-semibold transition-all duration-250 ease-out hover:ease-in">
+					className="px-8 py-5 text-slate-900 bg-teal-400 hover:bg-teal-100 hover:text-lg hover:font-semibold transition-all duration-250 ease-out hover:ease-in">
 					<div>Contact</div>
 				</Link>
 			</div>
