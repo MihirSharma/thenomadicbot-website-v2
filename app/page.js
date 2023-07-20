@@ -1,113 +1,282 @@
-import Image from 'next/image'
+"use client";
+import CallIcon from "@mui/icons-material/Call";
+import SendIcon from "@mui/icons-material/Send";
+import Image from "next/image";
+import NextIcon from "../public/Nextjs-logo.svg";
+import ReactIcon from "../public/React-icon.svg";
+import NodeIcon from "../public/Node.js_logo.svg";
+import MongoIcon from "../public/MongoDB_Logo.svg";
+import PostgresIcon from "../public/Postgresql_elephant.svg";
+import TailwindIcon from "../public/Tailwind_CSS_Logo.svg";
+import IonicIcon from "../public/Ionic_Logo.svg";
+import GitIcon from "../public/Git-logo.svg";
+import DockerIcon from "../public/Docker_(container_engine)_logo.svg";
+import SolidityIcon from "../public/Solidity_logo.svg";
+import HardhatIcon from "../public/hardhat-seeklogo.com.svg";
+import TruffleIcon from "../public/truffle-seeklogo.com.svg";
+import USFlag from "../public/Flag_of_the_United_States.svg";
+import UKFlag from "../public/Flag_of_the_United_Kingdom.svg";
+import IndiaFlag from "../public/Flag_of_India.svg";
+import UAEFlag from "../public/Flag_of_the_United_Arab_Emirates.svg";
+import QatarFlag from "../public/Flag_of_Qatar.svg";
+
+const goToCalendly = () => {
+	window.open("https://calendly.com/mihirsharmaofficial", "_blank");
+};
+
+const email = () => {
+	window.location.href = "mailto:mihir@thenomadicbot.com";
+};
 
 export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+	return (
+		<main className="flex min-h-screen flex-col items-center justify-normal p-24 mt-16">
+			<div className="flex flex-row justify-between items-center mx-4 w-full mb-16">
+				<div className="flex flex-col justify-evenly items-center 2xl:items-start w-full 2xl:w-1/2 ml-0 2xl:ml-32 mr-0 motion-safe:animate-fadeInLeft">
+					<div className="2xl:text-left text-center w-2/3 text-xl md:text-3xl lg:text-5xl font-semibold">
+						Your final stop for all your development needs
+					</div>
+					<div className="2xl:text-left text-center mt-4 text-base md:text-xl w-2/3">
+						<div>Your dream app or your brand's website</div>
+						<div>
+							Designed, Developed and Delivered on YOUR timeline.
+						</div>
+					</div>
+					<div className="flex flex-col lg:flex-row justify-start items-center">
+						<div
+							className="mt-6 mx-2 text-xl cursor-pointer bg-teal-600 hover:bg-teal-200 hover:text-2xl text-slate-900 font-semibold py-2 px-4 rounded transition-all duration-250 ease-out hover:ease-in"
+							onClick={goToCalendly}>
+							<div className="flex flex-row justify-between items-center">
+								<CallIcon />
+								<div className="ml-2"> Book a call</div>
+							</div>
+						</div>
+						<div
+							className="mt-6 mx-2 text-xl cursor-pointer bg-teal-600 hover:bg-teal-200 hover:text-2xl text-slate-900 font-semibold py-2 px-4 rounded transition-all duration-250 ease-out hover:ease-in"
+							onClick={email}>
+							<div className="flex flex-row justify-between items-center">
+								<SendIcon />
+								<div className="ml-2"> Send an E-mail </div>
+							</div>
+						</div>
+					</div>
+					<div className="flex flex-col lg:flex-row justify-between mt-4 text-xl w-full lg:w-2/3 items-center lg:items-end">
+						<div className="my-4 mx-2 w-full lg:w-1/3 flex flex-col justify-between items-center lg:items-start h-5/6">
+							<div>10+ satisfied clients</div>
+							<div className="mt-6 mx-2 text-xl cursor-pointer bg-teal-600 hover:bg-teal-200 hover:text-2xl text-slate-900 font-semibold py-2 px-4 rounded transition-all duration-250 ease-out hover:ease-in">
+								<div className="flex flex-row justify-between items-center">
+									<div className="ml-2 text-sm">
+										Know more
+									</div>
+								</div>
+							</div>
+						</div>
+						<div className="my-4 mx-4 w-full lg:w-1/3 flex flex-col justify-between items-center lg:items-start h-5/6">
+							<div>20+ languages, tools and stacks</div>
+							<div className="mt-6 mx-2 text-xl cursor-pointer bg-teal-600 hover:bg-teal-200 hover:text-2xl text-slate-900 font-semibold py-2 px-4 rounded transition-all duration-250 ease-out hover:ease-in">
+								<div className="flex flex-row justify-between items-center">
+									<div className="ml-2 text-sm">
+										Know more
+									</div>
+								</div>
+							</div>
+						</div>
+						<div className="my-4 mx-4 w-full lg:w-1/3 flex flex-col justify-between items-center lg:items-start h-5/6">
+							<div>Web 3.0 compatible sites</div>
+							<div className="mt-6 mx-2 text-xl cursor-pointer bg-teal-600 hover:bg-teal-200 hover:text-2xl text-slate-900 font-semibold py-2 px-4 rounded transition-all duration-250 ease-out hover:ease-in">
+								<div className="flex flex-row justify-between items-center">
+									<div className="ml-2 text-sm">
+										Know more
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div className="hidden 2xl:flex flex-col justify-evenly items-center w-1/2 motion-safe:animate-fadeInRight">
+					<img
+						className="shadow-inner rounded-3xl border-black border-8"
+						width={1000}
+						height={1000}
+						src="/code-homepage.jpg"
+					/>
+				</div>
+			</div>
+			<div className="flex flex-col justify-evenly items-center text-4xl w-full">
+				<div className="my-8 motion-safe:animate-fadeInBottom">
+					Toolset
+				</div>
+				<div className="flex flex-col md:flex-row xl:flex-col justify-between items-center w-screen bg-teal-700 py-4">
+					<div className="flex flex-col xl:flex-row justify-between items-center w-5/6 mx-4 py-2">
+						<div className="my-8 xl:my-0 motion-safe:animate-fadeInLeft">
+							<Image
+								src={NextIcon}
+								width={250}
+								height={250}
+								alt="Next JS"
+								title="Next JS"
+							/>
+						</div>
+						<div className="my-8 xl:my-0 motion-safe:animate-fadeInLeft">
+							<Image
+								src={ReactIcon}
+								width={150}
+								height={150}
+								alt="React"
+								title="React"
+							/>
+						</div>
+						<div className="my-8 xl:my-0 motion-safe:animate-fadeInLeft">
+							<Image
+								src={NodeIcon}
+								width={250}
+								height={250}
+								alt="Node JS"
+								title="Node JS"
+							/>
+						</div>
+						<div className="my-8 xl:my-0 motion-safe:animate-fadeInLeft">
+							<Image
+								src={MongoIcon}
+								width={300}
+								height={300}
+								alt="MongoDB"
+								title="MongoDB"
+							/>
+						</div>
+					</div>
+					<div className="flex flex-col xl:flex-row justify-between items-center w-5/6 mx-4 py-2">
+						<div className="my-8 xl:my-0 motion-safe:animate-fadeInRight">
+							<Image
+								src={PostgresIcon}
+								width={150}
+								height={150}
+								alt="PostgreSQL"
+								title="PostgreSQL"
+							/>
+						</div>
+						<div className="my-8 xl:my-0 motion-safe:animate-fadeInRight">
+							<Image
+								src={TailwindIcon}
+								width={150}
+								height={150}
+								alt="Tailwind CSS"
+								title="Tailwind CSS"
+							/>
+						</div>
+						<div className="my-8 xl:my-0 motion-safe:animate-fadeInRight">
+							<Image
+								src={IonicIcon}
+								width={250}
+								height={250}
+								alt="Ionic"
+								title="Ionic"
+							/>
+						</div>
+						<div className="my-8 xl:my-0 motion-safe:animate-fadeInLeft">
+							<Image
+								src={GitIcon}
+								width={200}
+								height={200}
+								alt="Git"
+								title="Git"
+							/>
+						</div>
+					</div>
+					<div className="flex flex-col xl:flex-row justify-between items-center w-5/6 mx-4 py-2">
+						<div className="my-8 xl:my-0 motion-safe:animate-fadeInRight">
+							<Image
+								src={DockerIcon}
+								width={300}
+								height={300}
+								alt="Docker"
+								title="Docker"
+							/>
+						</div>
+						<div className="my-8 xl:my-0 motion-safe:animate-fadeInLeft">
+							<Image
+								src={SolidityIcon}
+								width={100}
+								height={100}
+								alt="Solidity"
+								title="Solidty"
+							/>
+						</div>
+						<div className="my-8 xl:my-0 motion-safe:animate-fadeInLeft">
+							<Image
+								src={HardhatIcon}
+								width={300}
+								height={300}
+								alt="Hardhat"
+								title="Hardhat"
+							/>
+						</div>
+						<div className="my-8 xl:my-0 motion-safe:animate-fadeInLeft">
+							<Image
+								src={TruffleIcon}
+								width={125}
+								height={125}
+								alt="Truffle"
+								title="Truffle"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div className="flex flex-col justify-evenly items-center text-4xl w-full">
+				<div className="my-8 motion-safe:animate-fadeInBottom">
+					Projects completed in
+				</div>
+				<div className="flex flex-col md:flex-row xl:flex-col justify-between items-center w-screen bg-teal-700 py-4">
+					<div className="flex flex-col xl:flex-row justify-between items-center w-5/6 mx-4 py-2">
+						<div className="mx-4 my-8 xl:my-0 motion-safe:animate-fadeInLeft">
+							<Image
+								src={USFlag}
+								width={150}
+								height={150}
+								alt="United States of America"
+								title="United States of America"
+							/>
+						</div>
+						<div className="mx-4 my-8 xl:my-0 motion-safe:animate-fadeInLeft">
+							<Image
+								src={UKFlag}
+								width={150}
+								height={150}
+								alt="United Kingdom"
+								title="United Kingdom"
+							/>
+						</div>
+						<div className="mx-4 my-8 xl:my-0 motion-safe:animate-fadeInLeft">
+							<Image
+								src={IndiaFlag}
+								width={120}
+								height={120}
+								alt="India"
+								title="India"
+							/>
+						</div>
+						<div className="mx-4 my-8 xl:my-0 motion-safe:animate-fadeInRight">
+							<Image
+								src={UAEFlag}
+								width={160}
+								height={160}
+								alt="United Arab Emirates"
+								title="United Arab Emirates"
+							/>
+						</div>
+						<div className="mx-4 my-8 xl:my-0 motion-safe:animate-fadeInRight">
+							<Image
+								src={QatarFlag}
+								width={210}
+								height={210}
+								alt="Qatar"
+								title="Qatar"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	);
 }
