@@ -14,8 +14,14 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm i
-    - run: npm run build
-    - run: pm2 stop all
-    - run: pm2 start "npm run start" --name="website"
-    - run: pm2 save
+    - name: Install node modules    
+      run: npm i
+    - name: Build App  
+      run: npm run build
+    - name: Stop existing instance
+      run: pm2 stop all
+      continue-on-error: true
+    - name: Start new instance  
+      run: pm2 start "npm run start" --name="website"
+    - name: Save PM2 State  
+      run: pm2 save
