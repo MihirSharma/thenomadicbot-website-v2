@@ -9,6 +9,7 @@ jobs:
     runs-on: self-hosted
 
     steps:
+    - uses: 
     - uses: actions/checkout@v3
     - name: Build and Deploy - Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
@@ -16,6 +17,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm i
     - run: npm run build
-    - run: pm2 stop website
+    - run: pm2 stop all
     - run: pm2 start "npm run start" --name="website"
     - run: pm2 save
