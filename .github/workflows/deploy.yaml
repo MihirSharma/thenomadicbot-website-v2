@@ -9,12 +9,12 @@ jobs:
     runs-on: self-hosted
 
     steps:
-    - continue-on-error: true
     - uses: actions/checkout@v3
-    - name: Build app
+    - name: Build and Deploy - Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
+    - continue-on-error: true
     - run: npm i
     - run: npm run build
     - run: pm2 stop website
