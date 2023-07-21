@@ -58,11 +58,13 @@ const Navbar = () => {
 							: "hidden motion-safe:animate-fadeInBottom"
 					} flex flex-col justify-evenly items-center p-0`}>
 					<Link
+						onClick={toggleMenu}
 						href="/"
 						className="w-screen text-center px-8 py-5 text-slate-900 bg-teal-600 hover:bg-teal-100 hover:text-lg hover:font-semibold transition-all duration-250 ease-out hover:ease-in">
 						<div>Home</div>
 					</Link>
 					<Link
+						onClick={toggleMenu}
 						href="/about"
 						className="w-screen text-center px-8 py-5 text-slate-900 bg-teal-500 hover:bg-teal-100 hover:text-lg hover:font-semibold transition-all duration-250 ease-out hover:ease-in">
 						<div>About</div>
@@ -78,6 +80,7 @@ const Navbar = () => {
 					<div>Blog</div>
 				</Link> */}
 					<Link
+						onClick={toggleMenu}
 						href="/contact"
 						className="w-screen text-center px-8 py-5 text-slate-900 bg-teal-400 hover:bg-teal-100 hover:text-lg hover:font-semibold transition-all duration-250 ease-out hover:ease-in">
 						<div>Contact</div>

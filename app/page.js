@@ -44,7 +44,7 @@ export default function Home() {
 					</div>
 					<div className="flex flex-col lg:flex-row justify-start items-center">
 						<div
-							className="mt-6 mx-2 text-xl cursor-pointer bg-teal-600 hover:bg-teal-200 hover:text-2xl text-slate-900 font-semibold py-2 px-4 rounded transition-all duration-250 ease-out hover:ease-in"
+							className="mt-6 mx-2 text-base lg:text-xl cursor-pointer bg-teal-600 hover:bg-teal-200 hover:text-2xl text-slate-900 font-semibold py-2 px-4 rounded transition-all duration-250 ease-out hover:ease-in"
 							onClick={goToCalendly}>
 							<div className="flex flex-row justify-between items-center">
 								<CallIcon />
@@ -52,7 +52,7 @@ export default function Home() {
 							</div>
 						</div>
 						<div
-							className="mt-6 mx-2 text-xl cursor-pointer bg-teal-600 hover:bg-teal-200 hover:text-2xl text-slate-900 font-semibold py-2 px-4 rounded transition-all duration-250 ease-out hover:ease-in"
+							className="mt-6 mx-2 text-base lg:text-xl cursor-pointer bg-teal-600 hover:bg-teal-200 hover:text-2xl text-slate-900 font-semibold py-2 px-4 rounded transition-all duration-250 ease-out hover:ease-in"
 							onClick={email}>
 							<div className="flex flex-row justify-between items-center">
 								<SendIcon />
