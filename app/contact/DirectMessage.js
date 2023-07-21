@@ -45,7 +45,7 @@ const DirectMessage = () => {
 	};
 
 	return (
-		<div className="flex flex-col justify-evenly items-center">
+		<div className="flex flex-col justify-evenly items-center h-fit">
 			<div className="w-screen flex flex-col 2xl:flex-row justify-evenly items-center">
 				<div className="mt-6 mx-2 py-4 2xl:py-8 px-8 2xl:px-16 2xl:text-4xl text-xl cursor-pointer bg-teal-600 hover:bg-teal-200 hover:text-2xl 2xl:hover:text-5xl text-slate-900 font-semibold rounded transition-all duration-250 ease-out hover:ease-in">
 					<Link
@@ -116,7 +116,7 @@ const DirectMessage = () => {
 				</div>
 				<button
 					onClick={handleSubmit}
-					className="group cursor-pointer border-4 border-teal-600 border-solid w-full rounded-full p-4 bg-teal-100 hover:bg-teal-50 motion-safe:animate-fadeInRight">
+					className="group cursor-pointer border-4 border-teal-600 border-solid w-fit 2xl:w-full rounded-full p-4 bg-teal-100 hover:bg-teal-50 motion-safe:animate-fadeInRight">
 					<Image
 						src={SendIcon}
 						width={100}
