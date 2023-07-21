@@ -47,7 +47,7 @@ const DirectMessage = () => {
 	return (
 		<div className="flex flex-col justify-evenly items-center">
 			<div className="w-screen flex flex-col 2xl:flex-row justify-evenly items-center">
-				<div className="mt-6 mx-2 py-8 px-16 text-4xl cursor-pointer bg-teal-600 hover:bg-teal-200 hover:text-5xl text-slate-900 font-semibold rounded transition-all duration-250 ease-out hover:ease-in">
+				<div className="mt-6 mx-2 py-4 2xl:py-8 px-8 2xl:px-16 2xl:text-4xl text-xl cursor-pointer bg-teal-600 hover:bg-teal-200 hover:text-2xl 2xl:hover:text-5xl text-slate-900 font-semibold rounded transition-all duration-250 ease-out hover:ease-in">
 					<Link
 						href="https://calendly.com/mihirsharmaofficial"
 						target="_blank"
@@ -59,13 +59,13 @@ const DirectMessage = () => {
 				<div className="flex flex-col justify-evenly items-center">
 					<div
 						onClick={() => setShowDM(!showDM)}
-						className="w-full text-center mt-6 mx-2 py-8 px-16 text-4xl cursor-pointer bg-teal-600 hover:bg-teal-200 hover:text-5xl text-slate-900 font-semibold rounded transition-all duration-250 ease-out hover:ease-in">
+						className="w-full text-center mt-6 mx-2 py-4 2xl:py-8 px-8 2xl:px-16 2xl:text-4xl text-xl cursor-pointer bg-teal-600 hover:bg-teal-200 hover:text-2xl 2xl:hover:text-5xl text-slate-900 font-semibold rounded transition-all duration-250 ease-out hover:ease-in">
 						Send a DM
 					</div>
 				</div>
 				<div
 					title="mihir@thenomadicbot.com"
-					className="mt-6 mx-2 py-8 px-16 text-4xl cursor-pointer bg-teal-600 hover:bg-teal-200 hover:text-5xl text-slate-900 font-semibold rounded transition-all duration-250 ease-out hover:ease-in">
+					className="mt-6 mx-2 py-4 2xl:py-8 px-8 2xl:px-16 2xl:text-4xl text-xl cursor-pointer bg-teal-600 hover:bg-teal-200 hover:text-2xl 2xl:hover:text-5xl text-slate-900 font-semibold rounded transition-all duration-250 ease-out hover:ease-in">
 					<Link
 						href="mailto:mihir@thenomadicbot.com"
 						target="_blank"

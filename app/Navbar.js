@@ -44,16 +44,18 @@ const Navbar = () => {
 					</Link>
 				</div>
 			</div>
-			<div className="xl:hidden flex flex-col justify-evenly items-center text-center bg-teal-600 h-fit motion-safe:animate-fadeInTopNavbar">
+			<div className="xl:hidden flex flex-col justify-evenly items-center text-center h-fit motion-safe:animate-fadeInTopNavbar">
 				{/* <CssBaseline /> */}
 				<div
 					onClick={toggleMenu}
-					className="pl-8 py-4 cursor-pointer text-sm md:text-2xl font-semibold">
+					className="pl-8 py-4 cursor-pointer text-sm md:text-2xl font-semibold w-screen bg-teal-600">
 					The Nomadic Bot
 				</div>
 				<div
 					className={`${
-						showMenu ? "" : "hidden"
+						showMenu
+							? "motion-safe:animate-fadeInTop"
+							: "hidden motion-safe:animate-fadeInBottom"
 					} flex flex-col justify-evenly items-center p-0`}>
 					<Link
 						href="/"

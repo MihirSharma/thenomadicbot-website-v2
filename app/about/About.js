@@ -55,7 +55,7 @@ const About = () => {
 						at no charge.
 					</div>
 				</div>
-				<div className="flex flex-col justify-between items-center px-8 my-16 w-screen">
+				{/* <div className="flex flex-col justify-between items-center px-8 my-16 w-screen">
 					<div className="w-full flex flex-row xl:flex-col justify-between items-center motion-safe:animate-fadeIn">
 						<div className="flex flex-col xl:flex-row justify-between items-center w-2/3 my-16 xl:text-4xl text-base">
 							<div className="motion-safe:animate-fadeInLeft">
@@ -136,7 +136,7 @@ const About = () => {
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);
